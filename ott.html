@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTT Platform</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #141414;
+            color: #ffffff;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background-color: #000000;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        nav ul {
+            display: flex;
+            list-style-type: none;
+        }
+
+        nav ul li {
+            margin-left: 1rem;
+        }
+
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .featured {
+            height: 50vh;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        .featured-content {
+            max-width: 500px;
+            align-items: center;
+        }
+
+        .featured-content h2 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            align-items: center;
+        }
+        .content-section {
+            padding: 2rem;
+        }
+
+        .content-section h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .content-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+        }
+
+        .content-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 4px;
+        }
+
+        .content-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .content-item-title {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 0.5rem;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">MyOTT</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">TV Shows</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">My List</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="featured">
+            <div class="featured-content">
+                <h2> Title</h2>
+                <p>Watch the latest blockbuster now streaming exclusively on MyOTT.</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>Movies</h2>
+            <div class="content-grid">
+                <div class="content-item">
+                    <img src="https://via.placeholder.com/300x450" alt="Movie 1">
+                    <div class="content-item-title">Movie 1</div>
+                </div>
+                <div class="content-item">
+                    <img src="https://via.placeholder.com/300x450" alt="Movie 2">
+                    <div class="content-item-title">Movie 2</div>
+                </div>
+                <div class="content-item">
+                    <img src="https://via.placeholder.com/300x450" alt="Movie 3">
+                    <div class="content-item-title">Movie 3</div>
+                </div>
+          </div>
+        </section>
+
+        <section class="content-section">
+            <h2>TV Shows</h2>
+            <div class="content-grid">
+                <div class="content-item">
+                    <img src="https://via.placeholder.com/300x450" alt="TV Show 1">
+                    <div class="content-item-title">TV Show 1</div>
+                </div>
+                <div class="content-item">
+                    <img src="https://via.placeholder.com/300x450" alt="TV Show 2">
+                    <div class="content-item-title">TV Show 2</div>
+                </div>
+                <div class="content-item">
+                    <img src="https://via.placeholder.com/300x450" alt="TV Show 3">
+                    <div class="content-item-title">TV Show 3</div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #fff;
+        }
+
+        header {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin-left: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #616060;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover{
+            color:black;
+        }
+
+        .featured-products {
+            max-width: 1200px;
+            margin: 60px auto;
+            text-align: center;
+        }
+
+        .featured-products h2 {
+            font-size: 36px;
+            margin-bottom: 40px;
+            color: #333;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .product-card {
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .product-info .price {
+            font-weight: bold;
+            color: #333;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">FASHION HUB</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">Kids</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section class="featured-products">
+        <h2>Featured Products</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1574180566232-aaad1b5b8450?q=80&w=1887&auto=format&fit=crop&w=500&q=60" alt="Product 1">
+                <div class="product-info">
+                    <h3>Classic White Tee</h3>
+                    <p>Essential comfort for everyday wear</p>
+                    <span class="price">Rs. 500</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1520423465871-0866049020b7?q=80&w=1887&auto=format&fit=crop&w=500&q=60" alt="Product 2">
+                <div class="product-info">
+                    <h3>Denim Jacket</h3>
+                    <p>Timeless style for any season</p>
+                    <span class="price">Rs. 999</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1613673720017-56e42d90fee4?q=80&w=1887&auto=format&fit=crop&w=500&q=60" alt="Product 3">
+                <div class="product-info">
+                    <h3>Leather Boots</h3>
+                    <p>Durable and stylish footwear</p>
+                    <span class="price">Rs. 2999</span>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1542295669297-4d352b042bca?q=80&w=1887&auto=format&fit=crop&w=500&q=60" alt="Product 4">
+                <div class="product-info">
+                    <h3>Summer Dress</h3>
+                    <p>Stay effortlessly stylish</p>
+                    <span class="price">Rs. 1799</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Fashion Hub. All rights reserved.</p>
+    </footer>
+</body>
+</html>
