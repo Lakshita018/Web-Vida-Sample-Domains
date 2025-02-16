@@ -8,7 +8,7 @@
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            background-color: #f4f4f4;
+            background-color: #f8f8f8;
             color: #333;
             margin: 0;
         }
@@ -51,23 +51,65 @@
 <body>
     <div class="navbar">
         <a href="#">Home</a>
-        <a href="#">Appointments</a>
+        <a href="#">Services</a>
         <a href="#">Doctors</a>
+        <a href="#">Appointments</a>
         <a href="#">Contact</a>
     </div>
 
-    <h1>Welcome to ABC Hospital</h1>
+    <h1>Welcome to City Hospital</h1>
     <div class="container">
+        <h2>About Us</h2>
+        <p>City Hospital is committed to providing high-quality healthcare services with a team of experienced
+            professionals.</p>
+
         <h2>Our Services</h2>
-        <p>We provide top-notch healthcare services including general check-ups, emergency care, and specialist
-            consultations.</p>
+        <ul>
+            <li>Emergency Care 🚑</li>
+            <li>General Checkup 🩺</li>
+            <li>Specialized Surgeries ⚕️</li>
+            <li>Laboratory & Diagnostics 🧪</li>
+            <li>Maternity Care 🤱</li>
+        </ul>
+
+        <h2>Our Doctors</h2>
+        <p>Meet our expert healthcare professionals:</p>
+        <ul>
+            <li>Dr. A. Sharma - Cardiologist</li>
+            <li>Dr. R. Mehta - Neurologist</li>
+            <li>Dr. S. Verma - Pediatrician</li>
+            <li>Dr. K. Patel - Orthopedic</li>
+        </ul>
 
         <h2>Book an Appointment</h2>
-        <p>Schedule an appointment with our experienced doctors easily through our online system.</p>
+        <p>Schedule your appointment online.</p>
+        <form>
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" placeholder="Enter your name">
+            <br><br>
+            <label for="doctor">Select Doctor:</label>
+            <select id="doctor">
+                <option>Dr. A. Sharma</option>
+                <option>Dr. R. Mehta</option>
+                <option>Dr. S. Verma</option>
+                <option>Dr. K. Patel</option>
+            </select>
+            <br><br>
+            <label for="date">Select Date:</label>
+            <input type="date" id="date">
+            <br><br>
+            <button
+                style="padding: 10px 20px; background: #0073e6; color: white; border: none; border-radius: 5px; cursor: pointer;">Book
+                Appointment</button>
+        </form>
+
+        <h2>Contact Us</h2>
+        <p>Email: contact@cityhospital.com | Phone: +123 456 7890</p>
+        <p>Visit Us: 456 Health Street, Cityville</p>
     </div>
 
     <div class="footer">
-        &copy; 2025 ABC Hospital. All rights reserved.
+        &copy; 2025 City Hospital. All rights reserved.
     </div>
 </body>
 

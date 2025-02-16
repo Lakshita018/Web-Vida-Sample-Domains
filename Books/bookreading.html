@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Book Reader</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Interactive Book Reader</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#library">Library</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div id="categories" class="container">
+        <h2>Select a Category</h2>
+        <div class="categories-list">
+            <div class="category">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNJVONCnpCfbYmr8QH2VOMPcSCekn68cKpEQ&s" alt="Fiction">
+                <p>Fiction</p>
+            </div>
+            <div class="category">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNJVONCnpCfbYmr8QH2VOMPcSCekn68cKpEQ&s" alt="Science">
+                <p>Science</p>
+            </div>
+            <div class="category">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNJVONCnpCfbYmr8QH2VOMPcSCekn68cKpEQ&s" alt="History">
+                <p>History</p>
+            </div>
+        </div>
+    </div>
+    
+    <div id="library" class="container">
+        <h2>Select a Book</h2>
+        <div class="book-list">
+            <div class="book" onclick="openBook('Book 1', 'This is the content of Book 1. Enjoy reading!')">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNJVONCnpCfbYmr8QH2VOMPcSCekn68cKpEQ&s" alt="Book 1">
+                <p>Book 1</p>
+            </div>
+            <div class="book" onclick="openBook('Book 2', 'This is the content of Book 2. Happy reading!')">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNJVONCnpCfbYmr8QH2VOMPcSCekn68cKpEQ&s" alt="Book 2">
+                <p>Book 2</p>
+            </div>
+            <div class="book" onclick="openBook('Book 3', 'Welcome to Book 3. Have a great read!')">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNJVONCnpCfbYmr8QH2VOMPcSCekn68cKpEQ&s" alt="Book 3">
+                <p>Book 3</p>
+            </div>
+        </div>
+        <h2 id="book-title"></h2>
+        <p class="book-content" id="book-content"></p>
+        <div class="controls">
+            <button onclick="prevPage()">Previous</button>
+            <button onclick="nextPage()">Next</button>
+        </div>
+    </div>
+    
+    <footer id="contact">
+        <p>&copy; 2025 Interactive Book Reader. All rights reserved.</p>
+        <p>Contact us: email@example.com | Phone: +1234567890</p>
+        <p>Follow us on <a href="#">Twitter</a> | <a href="#">Facebook</a> | <a href="#">Instagram</a></p>
+    </footer>
+
+    <script>
+        function openBook(title, content) {
+            document.getElementById("book-title").innerText = title;
+            document.getElementById("book-content").innerText = content;
+            document.getElementById("book-content").style.display = "block";
+            document.querySelector(".controls").style.display = "block";
+        }
+        function prevPage() {
+            alert("Previous page clicked");
+        }
+        function nextPage() {
+            alert("Next page clicked");
+        }
+    </script>
+</body>
+</html>

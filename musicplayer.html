@@ -8,13 +8,13 @@
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            background-color: #222;
-            color: white;
+            background-color: #f8f8f8;
+            color: #333;
             margin: 0;
         }
 
         .navbar {
-            background: #444;
+            background: #ff6600;
             padding: 10px;
             display: block;
             text-align: center;
@@ -27,31 +27,17 @@
             display: inline-block;
         }
 
-        .player {
+        .container {
             margin: 50px auto;
             padding: 20px;
-            width: 300px;
-            background: #333;
+            width: 60%;
+            background: white;
             border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
-        }
-
-        button {
-            margin: 10px;
-            padding: 10px 15px;
-            background: #ff5722;
-            border: none;
-            color: white;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-
-        button:hover {
-            background: #e64a19;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         }
 
         .footer {
-            background: #444;
+            background: #ff6600;
             color: white;
             text-align: center;
             padding: 10px;
@@ -66,55 +52,39 @@
     <div class="navbar">
         <a href="#">Home</a>
         <a href="#">Playlist</a>
-        <a href="#">About</a>
+        <a href="#">Albums</a>
+        <a href="#">Artists</a>
+        <a href="#">Contact</a>
     </div>
 
-    <h1>Simple Music Player</h1>
-    <div class="player">
-        <h2 id="song-title">Song 1</h2>
-        <audio id="audio" src="song1.mp3"></audio>
-        <br>
-        <button onclick="prevSong()">⏮ Prev</button>
-        <button onclick="togglePlayPause()">▶ Play</button>
-        <button onclick="nextSong()">⏭ Next</button>
+    <h1>Welcome to My Music Player</h1>
+    <div class="container">
+        <h2>Now Playing</h2>
+        <p id="song-title">Song Title - Artist</p>
+        <audio id="audio-player" controls>
+            <source src="song.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <h2>Playlist</h2>
+        <ul>
+            <li onclick="playSong('song1.mp3', 'Song 1 - Artist A')">Song 1 - Artist A</li>
+            <li onclick="playSong('song2.mp3', 'Song 2 - Artist B')">Song 2 - Artist B</li>
+            <li onclick="playSong('song3.mp3', 'Song 3 - Artist C')">Song 3 - Artist C</li>
+        </ul>
     </div>
 
     <div class="footer">
-        &copy; 2025 Simple Music Player. All rights reserved.
+        &copy; 2025 My Music Player. All rights reserved.
     </div>
 
     <script>
-        const songs = ["song1.mp3", "song2.mp3", "song3.mp3"];
-        let currentSongIndex = 0;
-        let audio = document.getElementById("audio");
-        let songTitle = document.getElementById("song-title");
-        let playButton = document.querySelector("button:nth-child(2)");
-
-        function togglePlayPause() {
-            if (audio.paused) {
-                audio.play();
-                playButton.innerText = "⏸ Pause";
-            } else {
-                audio.pause();
-                playButton.innerText = "▶ Play";
-            }
-        }
-
-        function nextSong() {
-            currentSongIndex = (currentSongIndex + 1) % songs.length;
-            changeSong();
-        }
-
-        function prevSong() {
-            currentSongIndex = (currentSongIndex - 1 + songs.length) % songs.length;
-            changeSong();
-        }
-
-        function changeSong() {
-            audio.src = songs[currentSongIndex];
-            songTitle.innerText = "Song " + (currentSongIndex + 1);
-            audio.play();
-            playButton.innerText = "⏸ Pause";
+        function playSong(songSrc, title) {
+            let player = document.getElementById("audio-player");
+            let songTitle = document.getElementById("song-title");
+            player.src = songSrc;
+            songTitle.innerText = title;
+            player.play();
         }
     </script>
 </body>

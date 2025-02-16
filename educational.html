@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>educational site</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eef7ff;
+            color: #333;
+        }
+        .container {
+            width: 85%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #131d56;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        nav ul {
+            padding: 0;
+            list-style: none;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hero {
+            background: url('https://www.google.com/imgres?q=images%20related%20to%20education&imgurl=https%3A%2F%2Fmedia.istockphoto.com%2Fid%2F1409722748%2Fphoto%2Fstudents-raising-hands-while-teacher-asking-them-questions-in-classroom.jpg%3Fs%3D612x612%26w%3D0%26k%3D20%26c%3DNbVChOV9wIbQOhUD6BqpouZHHBbyQ2rkSjaVfIhpMv8%3D&imgrefurl=https%3A%2F%2Fwww.istockphoto.com%2Fphotos%2Feducation&docid=6oeeRO3nbaz1iM&tbnid=QVX66vrUA6BDyM&vet=12ahUKEwiVw9qml7mLAxXfUGwGHbf2DQYQM3oECBoQAA..i&w=612&h=408&hcb=2&ved=2ahUKEwiVw9qml7mLAxXfUGwGHbf2DQYQM3oECBoQAA') no-repeat center center/cover;
+            color: #131d56;
+            text-align: left;
+            padding: 100px 20px;
+        }
+        .btn {
+            display: inline-block;
+            background: #131d56;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            margin-top: 10px;
+            transition: background 0.3s ease-in-out;
+            
+        }
+        .btn:hover {
+            background: #003f5c;
+        }
+        section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .about {
+            background: #fff;
+            text-align: left;
+        }
+        .studycourse {
+            background: #caf0f8;
+        }
+        .items {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 60px;
+            margin-top: 20px;
+        }
+        .studycourse {
+            background: white;
+            padding: 20px;
+            padding-bottom: 70px;
+            border-radius: 0px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+        .contact {
+            background: #90e0ef;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #131d56;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#studycoure">Study Course</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Best Learning Experience</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,  </p>
+            <a href="#register" class="btn">Register</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+    </section>
+
+    <section id="studycourse" class="studycourse">
+        <div class="container">
+            <h2>Study Courses</h2>
+            <div class="items">
+                <div class="project">
+                    <h3>Medical</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                </div>
+                <div class="project">
+                    <h3>Non-Medical</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                    
+                    
+                </div>
+                <div class="project">
+                    <h3>Commerce</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                </div>
+                <div class="project">
+                    <h3>Arts</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
