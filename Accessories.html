@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(244, 244, 225) ;
+    }
+*{
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+    text-align: center;
+  }
+  h1{
+    font-size: 60px;
+  }
+header{
+    background-color: #fbeaca;
+}
+nav {
+    display: flex;
+    justify-content:space-around;
+    }
+ ul{
+    margin: 15px;
+    display: flex;
+    gap: 34px;
+   }
+ ul li {
+    list-style: none;
+   }
+   nav ul li a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 27px;
+   }
+   hero{
+    padding-top: 30px;
+    max-width: 50vw;
+    margin: auto;
+    display: grid;
+    justify-content: center;
+    gap: 55px;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(3, 1fr); 
+    }
+   .grid{
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 450px;
+    border: 2px solid black;
+}
+.image img{
+    height: 350px;
+    width: 300px;
+    border: 2px solid black;
+
+}
+.info{
+    padding: 12px;
+    }
+p{
+    font-size: 30px;
+    font-weight: bold;
+}
+footer{
+    padding: 15px;
+    background-color: #fbeaca;
+    }
+button{
+    background-color:beige;
+    color: black;
+    border: 2px solid black;
+    height: 45px;
+    width: 95px;
+    border-radius: 8px;
+    margin: 15px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.footer {
+    background-color: #fbeaca;
+    color: black;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+   }
+
+
+  
+    </style>
+</head>
+<body>
+    <header>
+        <h1> Accessories</h1>
+        <nav>
+            <ul>
+                <li> <a href="http://">home</a></li>
+                <li> <a href="http://">sale</a></li>
+                <li> <a href="http://">about us</a></li>
+                <li> <a href="http://">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hero>
+        <div class="grid">
+        <div class="image"><img src="image.png" alt="" srcset=""></div>
+        <div class="info">
+            <p>name</p>
+            <p>cost</p>
+        </div>
+        </div>
+        <div class="grid">
+            <div class="image"><img src="" alt="" srcset=""></div>
+            <div class="info">
+                <p>name</p>
+                <p>cost</p>
+            </div>
+            </div>
+            
+            <div class="grid">
+                <div class="image"><img src="" alt="" srcset=""></div>
+                <div class="info">
+                    <p>name</p>
+                    <p>cost</p>
+                </div>
+                </div>
+                <div class="grid">
+                    <div class="image"><img src="" alt="" srcset=""></div>
+                    <div class="info">
+                        <p>name</p>
+                        <p>cost</p>
+                    </div>
+                    </div>
+                    <div class="grid">
+                        <div class="image"><img src="" alt="" srcset=""></div>
+                        <div class="info">
+                            <p>name</p>
+                            <p>cost</p>
+                        </div>
+                        </div>
+                        <div class="grid">
+                            <div class="image"><img src="image.png" alt="" srcset=""></div>
+                            <div class="info">
+                                <p>name</p>
+                                <p>cost</p>
+                            </div>
+                            </div>
+        </hero>
+        <footer class="footer">
+            <p class="details">contact us</p>
+            <button>email us</button>
+
+           
+            <p>&copy; 2025 Your Company. All rights reserved.</p>
+        
+                
+        </footer>
+</body>
+</html>

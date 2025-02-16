@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>body{
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(156, 218, 218);
+    }
+*{
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+    text-align: center;
+  }
+  h1{
+    font-size: 60px;
+  }
+header{
+    background-color: rgb(223, 240, 250);
+}
+nav {
+    display: flex;
+    justify-content:space-around;
+    }
+ ul{
+    margin: 15px;
+    display: flex;
+    gap: 34px;
+   }
+ ul li {
+    list-style: none;
+   }
+   nav ul li a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 27px;
+   }
+   hero{
+    padding-top: 30px;
+    max-width: 50vw;
+    margin: auto;
+    display: grid;
+    justify-content: center;
+    gap: 55px;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(3, 1fr); 
+    }
+   .grid{
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 450px;
+    border: 2px solid black;
+}
+.image img{
+    height: 250px;
+    width: 250px;
+    border: 2px solid black;
+    margin: 10px;
+}
+.info{
+    padding: 12px;
+    }
+p{
+    font-size: 35px;
+    font-weight: bold;
+    }
+.about{
+        font-size: 20px;
+        font-weight: 500;
+    }
+    #readmore{
+        width: 140px;
+    }
+button{
+    background-color: rgb(223, 240, 250);
+    color: black;
+    border: 2px solid black;
+    height: 45px;
+    width: 95px;
+    border-radius: 8px;
+    margin: 15px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.footer {
+    background-color: rgb(223, 240, 250);
+    color: black;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+   }</style>
+</head>
+<body>
+    <header>
+        <h1> our blog</h1>
+        <nav>
+            <ul>
+                <li> <a href="http://">home</a></li>
+                <li> <a href="http://">sale</a></li>
+                <li> <a href="http://">about us</a></li>
+                <li> <a href="http://">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hero>
+        <div class="grid">
+        <div class="image"><img src="image1.png" alt="" srcset=""></div>
+        <div class="info">
+            <p>food</p>
+            <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <button id="readmore" >read more</button>
+        </div>
+        </div>
+        <div class="grid">
+            <div class="image"><img src="" alt="" srcset=""></div>
+            <div class="info">
+                <p>name</p>
+                <p class="about" >about</p>
+                <button id="readmore" >read more</button>
+            </div>
+            </div>
+            
+            <div class="grid">
+                <div class="image"><img src="" alt="" srcset=""></div>
+                <div class="info">
+                    <p>name</p>
+                    <p class="about">about</p>
+                    <button id="readmore" >read more</button>
+                </div>
+                </div>
+                <div class="grid">
+                    <div class="image"><img src="" alt="" srcset=""></div>
+                    <div class="info">
+                        <p>name</p>
+                        <p class="about">about</p>
+                        <button id="readmore" >read more</button>
+                    </div>
+                    </div>
+                    <div class="grid">
+                        <div class="image"><img src="" alt="" srcset=""></div>
+                        <div class="info">
+                            <p>name</p>
+                            <p class="about">about</p>
+                            <button id="readmore" >read more</button>
+                        </div>
+                        </div>
+                        <div class="grid">
+                            <div class="image"><img src="" alt="" srcset=""></div>
+                            <div class="info">
+                                <p>name</p>
+                                <p class="about">about</p>
+                                <button id="readmore" >read more</button>
+                            </div>
+                            </div>
+        </hero>
+        <footer class="footer">
+            <p class="details">contact us</p>
+            <button>email us</button>
+
+           
+            <p>&copy; 2025 Your Company. All rights reserved.</p>
+        
+                
+        </footer>
+</body>
+</html>
