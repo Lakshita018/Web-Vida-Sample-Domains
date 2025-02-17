@@ -1,10 +1,28 @@
-/* General Styles */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulting</title>
+   <style>
+    /* General Styles */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f8f9fa;
     color: #333;
+} .logo-container {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.logo {
+  width: auto;
+  height: 80px;
+  border-radius: 8px;
+  transition: transform 0.3s;
 }
 
 /* Header */
@@ -189,3 +207,68 @@ footer {
         width: 100%;
     }
 }
+   </style>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header>
+       
+        <nav>
+            <ul>
+                <div class="logo-container">
+                    <img src="ISTE-logo.png" alt="Logo" class="logo">
+                </div>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#footer-about">About Us</a></li>
+                <li><a href="#footer-contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Find Your Perfect Career Path</h1>
+        <p>Expert guidance to help you make the right career decisions.</p>
+        <a href="#services" class="btn">Explore Services</a>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-container">
+            <div class="service-box">
+                <i class="fas fa-user-tie"></i>
+                <h3>Career Coaching</h3>
+                <p>One-on-one coaching to help you choose the right career based on your skills and interests.</p>
+            </div>
+            <div class="service-box">
+                <i class="fas fa-file-alt"></i>
+                <h3>Resume & Cover Letter</h3>
+                <p>Professional resume and cover letter writing to stand out in the job market.</p>
+            </div>
+            <div class="service-box">
+                <i class="fas fa-chalkboard-teacher"></i>
+                <h3>Interview Training</h3>
+                <p>Mock interviews and expert tips to help you impress recruiters and land your dream job.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section" id="footer-about">
+                <h3>About Us</h3>
+                <p>Career Path Consulting helps individuals make informed career decisions through expert guidance and resources.</p>
+            </div>
+            <div class="footer-section" id="footer-contact">
+                <h3>Contact Us</h3>
+                <p>Email: <a href="mailto:info@careerconsult.com">info@careerconsult.com</a></p>
+                <p>Phone: +123 456 7890</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Career Path Consulting. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

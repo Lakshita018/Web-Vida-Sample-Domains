@@ -17,7 +17,7 @@
         }
 
         header {
-            background-color: #fff;
+            background-color: #080808;
             padding: 20px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
@@ -102,10 +102,25 @@
             text-align: center;
             padding: 20px;
         }
+        .logo-container {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.logo {
+  width: auto;
+  height: 80px;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
     </style>
 </head>
 <body>
     <header>
+        <div class="logo-container">
+            <img src="ISTE-logo.png" alt="Logo" class="logo">
+        </div>
         <nav>
             <div class="logo">FASHION HUB</div>
             <ul class="nav-links">

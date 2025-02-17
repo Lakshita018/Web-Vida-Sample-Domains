@@ -12,10 +12,22 @@
             color: #333;
             margin: 0;
         }
+        .logo-container {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.logo {
+  width: auto;
+  height: 80px;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
 
         .navbar {
             background: #ff6600;
-            padding: 10px;
+            padding: 30px;
             display: block;
             text-align: center;
         }
@@ -45,11 +57,27 @@
             width: 100%;
             bottom: 0;
         }
+        .logo-container {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.logo {
+  width: auto;
+  height: 80px;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
     </style>
 </head>
 
 <body>
+    
     <div class="navbar">
+        <div class="logo-container">
+            <img src="ISTE-logo.png" alt="Logo" class="logo">
+        </div>
         <a href="#">Home</a>
         <a href="#">Menu</a>
         <a href="#">Order Now</a>

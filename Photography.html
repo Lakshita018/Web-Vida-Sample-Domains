@@ -1,4 +1,11 @@
-/* General Styles */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black & White Photography Store</title>
+   <STYLE>
+    /* General Styles */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -204,10 +211,23 @@ footer {
     margin-bottom: 10px;
 }
 
+
 .footer-store p {
     color: #bbb;
 }
+.logo-container {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
 
+.logo {
+  width: auto;
+  height: 80px;
+  border-radius: 8px;
+  transition: transform 0.3s;
+  MARGIN:30PX;
+}
 @media (max-width: 768px) {
     .footer-content {
         flex-direction: column;
@@ -218,3 +238,64 @@ footer {
         width: 100%;
     }
 }
+   </STYLE>
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="ISTE-logo.png" alt="Logo" class="logo">
+        </div>
+        <h1></h1>
+        <nav>
+            <ul><div class="logo-container">
+                <img src="ISTE-logo.png" alt="Logo" class="logo">
+            </div>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#footer-store">Our Store</a></li>
+                <li><a href="#footer-contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Moments Captured in Monochrome</h1>
+        <p>Discover the timeless beauty of black & white photography, where every shot tells a deeper story.</p>
+        <p class="subtext">"A photograph is the pause button of life." - Unknown</p>
+        <a href="#gallery" class="btn">Explore Gallery</a>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-container">
+            <div class="photo"><img src="https://source.unsplash.com/400x300/?bw,landscape" alt="BW Landscape"></div>
+            <div class="photo"><img src="https://source.unsplash.com/400x300/?bw,portrait" alt="BW Portrait"></div>
+            <div class="photo"><img src="https://source.unsplash.com/400x300/?bw,city" alt="BW Cityscape"></div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div id="footer-store" class="footer-section">
+                <h3>Our Store</h3>
+                <p>Explore and purchase premium black & white photography prints.</p>
+                <a href="#">Browse Prints</a>
+            </div>
+
+            <div id="footer-contact" class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: <a href="mailto:support@bwphotostore.com">support@bwphotostore.com</a></p>
+                <p>Phone: +1 234 567 890</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <p><a href="#">Instagram</a> | <a href="#">Facebook</a></p>
+            </div>
+        </div>
+
+        <p class="footer-bottom">&copy; 2025 Black & White Photography. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

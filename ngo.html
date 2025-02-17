@@ -4,12 +4,164 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Helping Hands NGO</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eef7ff;
+    color: #333;
+}
+.container {
+    width: 85%;
+    margin: auto;
+    overflow: hidden;
+}
+header {
+    background: #0077b6;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+nav ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+nav ul li a:hover {
+    color: #ffdd57;
+}
+.hero {
+    background-color: rgb(255, 255, 255);
+    /* background: url('https://source.unsplash.com/1600x600/?volunteer,community') no-repeat center center/cover; */
+    color: rgb(51, 50, 50);
+    text-align: center;
+    padding: 100px 20px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+}
+.btn {
+    display: inline-block;
+    background: #ff6f00;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background 0.3s ease-in-out;
+}
+.btn:hover {
+    background: #e65100;
+}
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+.about {
+    background: #fff;
+}
+.projects {
+    background: #caf0f8;
+    margin: 5px;
+}
+.project-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+.project {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+.project:hover {
+    transform: translateY(-5px);
+}
+.contact {
+    background: #90e0ef;
+}
+.help {
+    background: #f0d9b5;
+    padding: 50px;
+}
+.help-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* margin: 5px; */
+}
+.help-box {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 30%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    margin: 10px;
+}
+.help-box:hover {
+    transform: scale(1.05);
+}
+.success {
+    background: #d4edda;
+    padding: 50px;
+}
+.testimonial {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #0077b6;
+    color: white;
+}
+.social-links a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s ease-in-out;
+}
+.social-links a:hover {
+    color: #ffdd57;
+}    .logo-container {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.logo {
+  width: auto;
+  height: 80px;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+    </style>>
 </head>
 <body>
 
     <header>
         <div class="container">
+            <div class="logo-container">
+                <img src="ISTE-logo.png" alt="Logo" class="logo">
+            </div>
             <h1>Helping Hands NGO</h1>
             <nav>
                 <ul>

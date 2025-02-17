@@ -20,13 +20,14 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 1rem 2rem;
+            padding: 30PX;
             background-color: #000000;
         }
 
         .logo {
             font-size: 1.5rem;
             font-weight: bold;
+            /* display: NONE; */
         }
 
         nav ul {
@@ -97,11 +98,26 @@
             padding: 0.5rem;
             font-size: 0.9rem;
         }
+        .logo-container {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.logo {
+  width: auto;
+  height: 80px;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
     </style>
 </head>
 <body>
     <header>
-        <div class="logo">MyOTT</div>
+        <div class="logo-container">
+            <img src="ISTE-logo.png" alt="Logo" class="logo">
+        </div>
+        <div class="">MyOTT</div>
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>

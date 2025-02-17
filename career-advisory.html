@@ -20,7 +20,7 @@
         header {
             background: black;
             color: #fff;
-            padding: 10px;
+            padding: 30px;
             text-align: center;
         }
         nav ul {
@@ -91,14 +91,30 @@
             background:black;
             color: white;
         }
+        .logo-container {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.logo {
+  width: auto;
+  height: 80px;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
     </style>
 </head>
 <body>
 
     <header>
+       
         <div class="container">
             <nav>
                 <ul>
+                    <div class="logo-container">
+                        <img src="ISTE-logo.png" alt="Logo" class="logo">
+                    </div>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#contact">Contact</a></li>
